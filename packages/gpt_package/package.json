@@ -1,0 +1,21 @@
+{
+  "name": "gpt_package",
+  "version": "1.0.0",
+  "description": "this returns gpt-4's answer to a question",
+  "main": "dist/gptanswer.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "npm test",
+    "build": "tsc"
+  },
+  "author": "jhayaly",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "zod": "^3.22.4"
+  }
+}
