@@ -6,6 +6,8 @@ This works as a sort-of Reddit sort-of chatGPT, with a MongoDB database backing 
 
 Run `npm i` to install dependencies.
 
+Run "npm run build" to build packages.
+
 To start development servers, run:
 
 ```sh
