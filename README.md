@@ -1,44 +1,16 @@
-# Full-stack app template
+# Fake Reddit Project
 
-This template provides boilerplate code for a full-stack TypeScript application using Vite with React and express.
-
-It is configured as a monorepo using [npm workspaces](https://docs.npmjs.com/cli/v7/using-npm/workspaces), so packages can share dependencies in one big `node_modules` folder instead of having duplicates. It uses [turborepo](https://turbo.build/repo) for pipeline, so you can just run one `npm run dev` to run both a backend and frontend dev server.
+This works as a sort-of Reddit sort-of chatGPT, with a MongoDB database backing it.
 
 # Development
 
-To get started, first run `npm i` to install dependencies.
+Run `npm i` to install dependencies.
 
-To start development servers in parallel, run:
+To start development servers, run:
 
 ```sh
 npm run dev
 ```
-
-To scan your codebase with our ESLint config, run:
-
-```sh
-npm run lint
-```
-
-# Communicating between ends
-
-We've configured Vite's dev server to use a [proxy](https://vitejs.dev/config/server-options.html#server-proxy) at `/api`, which points at the default backend dev URL (also at `/api`).
-
-This means, in development, you can (for example) make a request to a route defined on the backend at `http://localhost:8000/api/user` by hitting `/api/user`, which would otherwise just be `http://localhost:3000/api/user`.
-
-This mirrors what larger projects do in production, putting the backend at the same URL under some extra path or subdomain. It also eliminates a lot of extra URL manipulation work or [CORS problems](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors) you could otherwise encounter.
-
-# Advanced usage: sharing types between ends
-
-If you define types in `apps/backend` you want to use in your frontend – especially useful for building typesafe routes – you can add this line in your frontend `package.json`, in `devDependencies`:
-
-```json
-"backend": "*"
-```
-
-This allows you to easliy import types, i.e.:
-
-```ts
-import type { RouteBody } from 'backend/src/types';
+Ps. Please reach out to me if the MongoDB database does not connect successfully... because of my subscription plan, it keeps disconnecting from the current IP Address and I just have to connect it then it works :/
 ```
 # cis-1962-reddit-project
