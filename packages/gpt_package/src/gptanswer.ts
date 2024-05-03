@@ -1,7 +1,7 @@
 import OpenAI from 'openai';
 
 const client = new OpenAI({
-  apiKey: 'sk-proj-SNrXJbWwlbBrtmAWTk5aT3BlbkFJ3iEcrD8crT8wIcMeb6ht'
+  apiKey: 'sk-proj-t0ODPskyFyizd3mfB9goT3BlbkFJrJbf5kYF74Qzn4V0tCGN'
 });
 
 const processQuestion = async (question) => {
